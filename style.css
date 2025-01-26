@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(15, 52, 82);
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: burlywood;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(15, 52, 82);
+}
+
+header a {
+    padding: 20px;
+    color: orange;
+    text-decoration: none;
+    font-size: 3em;
+    font-family: monospace;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: orange;
+}
+
+#Home {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.home {
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3em;
+    font-family: 'Lucida Sans', sans-serif;
+    color: orange;
+}
+
+.home h2 {
+    font-size: 2.5em;
+    color: rgb(231, 104, 104);
+    font-family: monospace;
+    margin-top: 20px;
+}
+
+.home-btn {
+    color: aliceblue;
+    padding: 10px 20px;
+    border: 1px solid yellow;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1em;
+    transition: transform 0.4s ease;
+}
+
+.home-btn:hover {
+    transform: scale(1.2);
+}
+
+#Home img {
+    width: 40%;
+    height: auto;
+}
+
+#About {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#About img {
+    width: 45%;
+    height: auto;
+}
+
+.about-content {
+    color: aliceblue;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 3em;
+    font-family: 'Courier New', monospace;
+}
+
+.about-content h2 {
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.about-content pre {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+#Menu {
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.menu-head h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(30, 60, 90);
+    border: 1px solid wheat;
+    border-radius: 20px;
+    color: aliceblue;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.box h2 span {
+    color: green;
+    font-size: 1.5em;
+}
+
+#Service {
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.service-head {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.service-head h1 {
+    font-size: 2.5em;
+    font-family: 'Courier New', monospace;
+}
+
+.service-head h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: rgb(30, 60, 90);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.service-box h1 {
+    font-family: 'Courier New', monospace;
+    margin: 10px 0;
+}
+
+.service-box p {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+#chat {
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: wheat;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+.content{
+    background: transparent;
+}
+
+#chat h1 {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    background-color: wheat;
+
+}
+
+#chat button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    transition: transform 0.3s ease;
+}
+
+#chat button:hover {
+    transform: scale(1.1);
+}
+
+#Contact {
+    padding: 50px 20px;
+    background-color: rgb(15, 52, 82);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col{
+    margin-left: 90px;
+
+}
+
+.col h3 {
+    color: orange;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.col h3::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: red;
+    left: 25%;
+    bottom: -5px;
+}
+
+.col ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.col ul a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.col ul a:hover {
+    color: orange;
+}
+
+.socail a {
+    font-size: 30px;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.socail a:hover {
+    color: orange;
+}
